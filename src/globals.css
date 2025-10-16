@@ -1,3 +1,5 @@
+@import "./utilities.css";
+
 :root {
     --background-colour: #191c25;
     --accent-colour: #1d90c6;
