@@ -1,42 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --background-colour: #333;
-    --accents-colour: #1d90c6;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#navbar {
-    background-color: var(--background-colour);
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    text-justify: auto;
-}
-
-#navbar a {
-    color: white;
-    padding: 7px 20px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 2rem;
-    transition: background-color 250ms;
-}
-
-#navbar a:hover {
-    background-color: var(--accents-colour);
-}
-=======
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -115,4 +77,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
->>>>>>> 795ff47f5f99c393a4a676c685396219a8552c99

@@ -1,4 +1,5 @@
 @import "./utilities.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     --background-colour: #191c25;
@@ -7,6 +8,7 @@
     --text-colour: #eee;
     --navbar-background: #222;
     --navbar-text: #fff;
+    --heading-colour: #1dc6b5;
 }
 
 * {
@@ -25,11 +27,22 @@ body *:first-child:not(nav):not(a) {
     margin-top: 3rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    color: var(--heading-colour);
+}
+
 #title {
     text-align: center;
     margin: 4rem 0rem 1rem 0rem;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 3rem;
-    color: var(--primary);
+    mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%);
+    -webkit-mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%);
 }

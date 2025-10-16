@@ -4,12 +4,12 @@
 </script>
 
 <template>
-    <div class="background" bg-src={{ src }}></div>
+    <div class="background"></div>
 </template>
 
 <style scoped>
 .background {
-    background-image: attr(bg-src);
+    background-image: url('../assets/backgrounds/stacked waves 1.svg');
     position: fixed;
     width: 100%;
     height: 100%;
