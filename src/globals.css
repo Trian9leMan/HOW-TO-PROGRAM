@@ -13,6 +13,7 @@
     100% { border-color: var(--primary); }
 }
 
+
 :root {
     --background-colour: #191c25;
     --accent-colour: #1d90c6;
@@ -63,3 +64,4 @@ h6 {
     border-bottom: solid calc(1 / 16 * 1rem) var(--accent-colour);
     animation: changeColour 20s infinite, changeBorderColour 15s infinite;
 }
+

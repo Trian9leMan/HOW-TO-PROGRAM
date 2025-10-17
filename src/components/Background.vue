@@ -1,5 +1,3 @@
-<!-- TODO: MAKE THIS WORK -->
-
 <script setup lang="ts">
 </script>
 
