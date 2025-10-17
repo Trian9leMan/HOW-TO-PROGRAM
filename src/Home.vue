@@ -9,7 +9,7 @@ import Background from './components/Background.vue'
     <main>
         <h2 class="heading">Why should you code?</h2>
     </main>
-    <Background src="src/assets/backgrounds/stacked waves 1.svg" />
+    <Background src="src/assets/backgrounds/stacked waves 1.svg" style="top: 7rem;" />
 </template>
 
 <style scoped>

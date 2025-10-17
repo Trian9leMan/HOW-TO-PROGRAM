@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @keyframes changeColour {
-    0% { color: var(--accent-colour); }
-    50% { color: var(--primary); }
-    100% { color: var(--accent-colour); }
+    0% { color: #54add6; }
+    50% { color: var(--heading-colour); }
+    100% { color: #54add6; }
 }
 
 @keyframes changeBorderColour {
@@ -20,7 +20,7 @@
     --text-colour: #eee;
     --navbar-background: #323841;
     --navbar-text: #fff;
-    --heading-colour: #1db8c6;
+    --heading-colour: #b3e9ee;
 }
 
 * {
@@ -47,6 +47,7 @@ h5,
 h6 {
     font-family: 'Inter', sans-serif;
     color: var(--heading-colour);
+    font-weight: 500;
 }
 
 #title {
@@ -55,12 +56,10 @@ h6 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 3rem;
-    /* mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%);
-    -webkit-mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%); */
     display: flex;
     justify-self: center;
     align-self: center;
     padding: 0.5rem 2rem;
-    border-bottom: solid 0.125rem var(--accent-colour);
-    animation: changeColour 15s infinite, changeBorderColour 15s infinite;
+    border-bottom: solid calc(1 / 16 * 1rem) var(--accent-colour);
+    animation: changeColour 20s infinite, changeBorderColour 15s infinite;
 }
