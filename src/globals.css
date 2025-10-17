@@ -7,6 +7,12 @@
     100% { color: var(--accent-colour); }
 }
 
+@keyframes changeBorderColour {
+    0% { border-color: var(--primary); }
+    50% { border-color: var(--accent-colour); }
+    100% { border-color: var(--primary); }
+}
+
 :root {
     --background-colour: #191c25;
     --accent-colour: #1d90c6;
@@ -51,5 +57,10 @@ h6 {
     font-size: 3rem;
     /* mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%);
     -webkit-mask-image: linear-gradient(90deg,var(--accent-colour) 0%, var(--primary) 100%); */
-    animation: changeColour 10s infinite;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 2rem;
+    border-bottom: solid 0.125rem var(--accent-colour);
+    animation: changeColour 15s infinite, changeBorderColour 15s infinite;
 }
