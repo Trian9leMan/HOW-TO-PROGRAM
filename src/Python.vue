@@ -8,13 +8,15 @@ onMounted(() => {
         "#blob1",
         {
             path: "#blob1",
+            opacity: .75,
         },
         {
             path: "#blob2",
+            opacity: .25,
         },
         {
             repeat: 999,
-            duration: 5000,
+            duration: 10000,
             yoyo: true,
             easing: "easeInOutSine"
         }
@@ -26,8 +28,16 @@ onMounted(() => {
 
 <template>
     <NavBar />
-    <h1 id="title">Python</h1>
     <main>
+        <h1 id="title">Welcome to Python!</h1>
+        <h2>
+            How to set up Python and start coding!
+        </h2>
+        <h3>
+            Follow the video below about setting up Python and your coding environment:
+            Here's where you can download Python:
+            <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.
+        </h3>
     </main>
     <!-- <svg id="blob" class="blob-motion" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"> -->
@@ -48,14 +58,18 @@ onMounted(() => {
 <style scoped>
 .blob-motion {
     /* aspect-ratio: 900 / 600; */
-    transform: translateY(-20%);
+    transform: translateY(-15%);
     min-height: 100%;
     min-width: 1024px;
     width: 50%;
     height: auto;
+    display: block;
+    /* margin: auto; */
     position: fixed;
-    top: 20%;
-    left: 22.5%;
+    top: 50%;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: calc(-300px + 3rem);
     z-index: -1;
 }
 
