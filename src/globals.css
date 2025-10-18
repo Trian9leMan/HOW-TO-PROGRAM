@@ -1,18 +1,30 @@
 @import "./utilities.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "./transitions.css";
 
 @keyframes changeColour {
-    0% { color: #54add6; }
-    50% { color: var(--heading-colour); }
-    100% { color: #54add6; }
+    0% {
+        color: #54add6;
+    }
+    50% {
+        color: var(--heading-colour);
+    }
+    100% {
+        color: #54add6;
+    }
 }
 
 @keyframes changeBorderColour {
-    0% { border-color: var(--primary); }
-    50% { border-color: var(--accent-colour); }
-    100% { border-color: var(--primary); }
+    0% {
+        border-color: var(--primary);
+    }
+    50% {
+        border-color: var(--accent-colour);
+    }
+    100% {
+        border-color: var(--primary);
+    }
 }
-
 
 :root {
     --background-colour: #191c25;
@@ -46,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--heading-colour);
     font-weight: 500;
 }
@@ -64,4 +76,3 @@ h6 {
     border-bottom: solid calc(1 / 16 * 1rem) var(--accent-colour);
     animation: changeColour 20s infinite, changeBorderColour 15s infinite;
 }
-

@@ -4,8 +4,8 @@
 <template>
     <nav id="navbar">
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/python">Python</RouterLink>
-        <RouterLink to="/cpp">C++</RouterLink>
+        <RouterLink to="/python/1">Python</RouterLink>
+        <RouterLink to="/cpp/1">C++</RouterLink>
     </nav>
 </template>
 
