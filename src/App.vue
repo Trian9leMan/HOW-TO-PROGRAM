@@ -20,7 +20,8 @@ watch(() => route.fullPath, (to, from) => {
 
   if (sameSection && Math.abs(toDepth - fromDepth) === 1) {
     // Navigating within a section (e.g. python → python/2)
-    transitionName.value = toDepth > fromDepth ? 'slide-from-left' : 'slide-from-right'
+    // transitionName.value = toDepth > fromDepth ? 'slide-from-left' : 'slide-from-right'
+    transitionName.value = toDepth > fromDepth ? 'scale-slide-fade-from-left' : 'scale-slide-fade-from-right'
     transitionMode.value = 'default'
   } else {
     // Navigating between root pages (home → python or cpp → home)

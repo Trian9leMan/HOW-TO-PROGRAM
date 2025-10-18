@@ -56,7 +56,6 @@ onBeforeUnmount(() => {
                     fill="#1dc6a1" style="opacity: 0" />
             </g>
         </svg>
-        <RouterLink to="/python/2">Python</RouterLink>
     </div>
 </template>
 
@@ -72,11 +71,6 @@ onBeforeUnmount(() => {
     height: auto;
     transform: translateY(-20%);
 }
-
-#blob1 {
-    will-change: transform;
-}
-
 
 #blob2 {
     opacity: 0;
