@@ -8,6 +8,10 @@
     opacity: 0;
 }
 
+.fade-appear-active {
+    transition: opacity 0.5s ease-in-out;
+}
+
 .slide-from-left-enter-active,
 .slide-from-left-leave-active,
 .slide-from-right-enter-active,
@@ -34,6 +38,7 @@
 .slide-from-right-enter-from {
     transform: translateX(-100%);
 }
+
 .wrapper {
     position: relative;
     overflow: hidden;

@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
         <NavBar />
         <h1 id="title">Python</h1>
         <main></main>
-
+<RouterLink to="/python/1">Python</RouterLink>
         <svg class="blob-motion" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(471.5 301.3)">
                 <path id="blob1"
@@ -56,7 +56,6 @@ onBeforeUnmount(() => {
                     fill="#1dc6a1" style="opacity: 0" />
             </g>
         </svg>
-        <RouterLink to="/python/2">Python</RouterLink>
     </div>
 </template>
 
