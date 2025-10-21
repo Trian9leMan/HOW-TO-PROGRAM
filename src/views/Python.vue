@@ -11,18 +11,18 @@ onMounted(() => {
         const blob2 = document.querySelector('#blob2')
 
         if (!blob1 || !blob2) return
-
-        anim = KUTE.fromTo(
+            KUTE.fromTo(
             blob1,
             { path: blob1 },
             { path: blob2 },
             {
-                repeat: Infinity,
-                duration: 10000,
-                yoyo: true,
-                easing: 'easeInOutSine'
+            repeat: Infinity,
+            duration: 8000,
+            yoyo: true,
+            easing: 'easingCubicInOut'
             }
-        )
+            )
+
 
         anim.start()
     })
@@ -42,7 +42,19 @@ onBeforeUnmount(() => {
     <div class="python1-wrapper">
         <NavBar />
         <h1 id="title">Python</h1>
-        <main></main>
+        <main>
+            <h1 class="heading">What is Python?</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis. Exercitationem dolores veritatis blanditiis optio possimus consequatur, quasi nulla? Soluta molestias cum quaerat unde voluptatibus delectus reprehenderit rem voluptates eaque.
+                Culpa esse sapiente porro sunt quasi aut laborum alias repudiandae quae. Iure quo ipsum sunt, quos minima quasi nemo eos rem tenetur modi sed nostrum quaerat? Est, enim? Velit, reprehenderit.
+            </p>
+            <h1 class="heading">Setting Up</h1>
+            <p class="special">
+                Go to the official Python website to setup python and follow the video below to setup your coding enviroment, so that you can start coding!
+            </p>
+            <a href="https://www.python.org/downloads/" class="link">OFFICIAL SITE FOR PYTHON DOWNLOAD</a>
+            <video></video>
+        </main>
 
         <svg class="blob-motion" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(471.5 301.3)">
@@ -62,15 +74,18 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .blob-motion {
-    position: fixed;
-    top: 20%;
-    left: 22.5%;
-    z-index: -1;
-    min-width: 1024px;
-    width: 50%;
-    height: auto;
-    transform: translateY(-20%);
+  width: clamp(300px, 60vw, 800px);
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
+
+svg.blob-motion {
+    display: block;
+    margin:auto;
+    margin-top: 4rem;
+}
+
 
 #blob1 {
     will-change: transform;
@@ -78,5 +93,18 @@ onBeforeUnmount(() => {
 
 #blob2 {
     opacity: 0;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  color: #1dc6a1;
+  font-weight: 600;
+  text-decoration: none;
+}
+ .special {
+    text-align: center;
+    display: block;
 }
 </style>

@@ -48,16 +48,16 @@
 
 .scale-slide-fade-from-left-enter-active,
 .scale-slide-fade-from-left-leave-active {
-    position: absolute;
+    /* position: absolute; */
     transition: all 850ms ease;
 }
 
 .scale-slide-fade-from-left-enter-from {
-    left: -100%;
+    transform: translateX(-100%);
 }
 
 .scale-slide-fade-from-left-enter-to {
-    left: 0%;
+    transform: translateX(0%);
 }
 
 .scale-slide-fade-from-left-leave-from {
@@ -72,16 +72,15 @@
 
 .scale-slide-fade-from-right-enter-active,
 .scale-slide-fade-from-right-leave-active {
-    position: absolute;
     transition: all 850ms ease;
 }
 
 .scale-slide-fade-from-right-enter-from {
-    left: 100%;
+    transform: translateX(100%);
 }
 
 .scale-slide-fade-from-right-enter-to {
-    left: 0%;
+    transform: translateX(0%);
 }
 
 .scale-slide-fade-from-right-leave-from {
