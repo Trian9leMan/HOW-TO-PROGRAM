@@ -2,15 +2,8 @@
 import { onMounted, onBeforeUnmount } from 'vue'
 import NavBar from '../components/NavBar.vue'
 import KUTE from 'kute.js'
-import TextMorph from '../components/TextMorph.vue'
 
 let anim: ReturnType<typeof KUTE.fromTo> | null = null
-
-const texts = [
-    "beginner friendly",
-    "simple",
-    "powerful",
-]
 
 onMounted(() => {
     requestIdleCallback(() => {
