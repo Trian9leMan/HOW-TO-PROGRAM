@@ -72,12 +72,12 @@ onBeforeUnmount(() => {
             <g transform="translate(471.5 301.3)">
                 <path id="blob1"
                     d="M159.3,-66.4C174,-6.5,131.1,57.4,65.5,109.6C0,161.8,-88.2,202.3,-143.6,168.8C-199,135.3,-221.7,28,-192.3,-52.2C-162.9,-132.3,-81.5,-185.1,-4.6,-183.6C72.3,-182.2,144.6,-126.3,159.3,-66.4z"
-                    fill="#1dc6a1" />
+                    fill="#54add6" />
             </g>
             <g transform="translate(445.3 277.9)">
                 <path id="blob2"
                     d="M162,-187.7C200.6,-160.7,216,-100.7,213,-47.9C210,5,188.6,50.7,167.1,104.5C145.6,158.3,124.1,220.1,82.5,241.9C40.8,263.7,-21,245.6,-76,220.5C-131.1,195.4,-179.4,163.5,-196.4,120.1C-213.4,76.8,-199,22.1,-184.4,-27.6C-169.8,-77.4,-155,-122.2,-124.2,-150.6C-93.4,-179,-46.7,-191,7.5,-199.9C61.7,-208.9,123.4,-214.7,162,-187.7z"
-                    fill="#1dc6a1" style="opacity: 0" />
+                    fill="#439cc5" style="opacity: 0" />
             </g>
         </svg>
     </div>
@@ -85,19 +85,17 @@ onBeforeUnmount(() => {
 
 
 <style scoped>
-.blob-motion {
-    width: clamp(300px, 60vw, 800px);
+svg.blob-motion {
+    width: clamp(300px, 60vw, 2700px);
     height: auto;
     margin: 0 auto;
     display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
-
-svg.blob-motion {
-    display: block;
-    margin: auto;
-    margin-top: 4rem;
-}
-
 
 #blob1 {
     will-change: transform;
