@@ -123,5 +123,6 @@ onBeforeUnmount(() => {
     filter: url(#threshold) blur(0.6px);
     line-height: 0;
     margin: 0;
+    width: auto;
 }
 </style>

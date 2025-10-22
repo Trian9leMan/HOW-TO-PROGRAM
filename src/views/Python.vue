@@ -18,17 +18,17 @@ onMounted(() => {
         const blob2 = document.querySelector('#blob2')
 
         if (!blob1 || !blob2) return
-            KUTE.fromTo(
+        const anim = KUTE.fromTo(
             blob1,
             { path: blob1 },
             { path: blob2 },
             {
-            repeat: Infinity,
-            duration: 8000,
-            yoyo: true,
-            easing: 'easingCubicInOut'
+                repeat: Infinity,
+                duration: 8000,
+                yoyo: true,
+                easing: 'easingCubicInOut'
             }
-            )
+        )
 
 
         anim.start()
@@ -50,16 +50,19 @@ onBeforeUnmount(() => {
         <NavBar />
         <main>
             <h1 id="title">Python</h1>
-            <TextMorph :texts="texts" style="font-size: 3rem;" />
-        
-            <h1 class="heading">What is Python?</h1>
+
+            <h2 class="heading">What is Python?</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis. Exercitationem dolores veritatis blanditiis optio possimus consequatur, quasi nulla? Soluta molestias cum quaerat unde voluptatibus delectus reprehenderit rem voluptates eaque.
-                Culpa esse sapiente porro sunt quasi aut laborum alias repudiandae quae. Iure quo ipsum sunt, quos minima quasi nemo eos rem tenetur modi sed nostrum quaerat? Est, enim? Velit, reprehenderit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis. Exercitationem dolores
+                veritatis blanditiis optio possimus consequatur, quasi nulla? Soluta molestias cum quaerat unde
+                voluptatibus delectus reprehenderit rem voluptates eaque.
+                Culpa esse sapiente porro sunt quasi aut laborum alias repudiandae quae. Iure quo ipsum sunt, quos
+                minima quasi nemo eos rem tenetur modi sed nostrum quaerat? Est, enim? Velit, reprehenderit.
             </p>
-            <h1 class="heading">Setting Up</h1>
+            <h2 class="heading">Setting Up</h2>
             <p class="special">
-                Go to the official Python website to setup python and follow the video below to setup your coding enviroment, so that you can start coding!
+                Go to the official Python website to setup python and follow the video below to setup your coding
+                enviroment, so that you can start coding!
             </p>
             <a href="https://www.python.org/downloads/" class="link">OFFICIAL SITE FOR PYTHON DOWNLOAD</a>
             <video></video>
@@ -83,15 +86,15 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .blob-motion {
-  width: clamp(300px, 60vw, 800px);
-  height: auto;
-  margin: 0 auto;
-  display: block;
+    width: clamp(300px, 60vw, 800px);
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 svg.blob-motion {
     display: block;
-    margin:auto;
+    margin: auto;
     margin-top: 4rem;
 }
 
@@ -105,14 +108,15 @@ svg.blob-motion {
 }
 
 .link {
-  display: block;
-  text-align: center;
-  margin: 1rem auto;
-  color: #1dc6a1;
-  font-weight: 600;
-  text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    color: #1dc6a1;
+    font-weight: 600;
+    text-decoration: none;
 }
- .special {
+
+.special {
     text-align: center;
     display: block;
 }
