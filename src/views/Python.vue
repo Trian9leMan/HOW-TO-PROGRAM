@@ -2,8 +2,15 @@
 import { onMounted, onBeforeUnmount } from 'vue'
 import NavBar from '../components/NavBar.vue'
 import KUTE from 'kute.js'
+import TextMorph from '../components/TextMorph.vue'
 
 let anim: ReturnType<typeof KUTE.fromTo> | null = null
+
+const texts = [
+    "beginner friendly",
+    "simple",
+    "powerful",
+]
 
 onMounted(() => {
     requestIdleCallback(() => {
@@ -41,8 +48,10 @@ onBeforeUnmount(() => {
 <template>
     <div class="python1-wrapper">
         <NavBar />
-        <h1 id="title">Python</h1>
-        <main></main>
+        <main>
+            <h1 id="title">Python</h1>
+            <TextMorph :texts="texts" style="font-size: 3rem;" />
+        </main>
 
         <svg class="blob-motion" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(471.5 301.3)">
