@@ -4,12 +4,11 @@ import NavBar from '../components/NavBar.vue'
 
 <template>
     <div class="CPP1-wrapper">
-        <NavBar/>
+        <NavBar />
         <h1 id="title">C++</h1>
         <main>
         </main>
     </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

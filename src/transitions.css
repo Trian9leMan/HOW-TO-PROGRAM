@@ -54,10 +54,11 @@
 
 .scale-slide-fade-from-left-enter-from {
     transform: translateX(-100%);
+    transform: translateX(-100%);
 }
 
 .scale-slide-fade-from-left-enter-to {
-    transform: translateX(0%);
+    transform: translateX(0);
 }
 
 .scale-slide-fade-from-left-leave-from {
@@ -80,7 +81,7 @@
 }
 
 .scale-slide-fade-from-right-enter-to {
-    transform: translateX(0%);
+    transform: translateX(0);
 }
 
 .scale-slide-fade-from-right-leave-from {
