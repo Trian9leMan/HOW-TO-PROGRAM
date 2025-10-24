@@ -40,10 +40,10 @@ function doMorph() {
 
 function setMorph(fraction: number) {
     (text1Ref.value as HTMLSpanElement).style.filter = `blur(${Math.min(8 / (1 - fraction) - 8, 100)}px)`;
-    (text1Ref.value as HTMLSpanElement).style.opacity = `${Math.pow(1 - fraction, 0.4) * 100}%`;
+    (text1Ref.value as HTMLSpanElement).style.opacity = `${Math.pow(1 - fraction, 0.6) * 100}%`;
 
     (text2Ref.value as HTMLSpanElement).style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-    (text2Ref.value as HTMLSpanElement).style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+    (text2Ref.value as HTMLSpanElement).style.opacity = `${Math.pow(fraction, 0.6) * 100}%`;
 
     (text1Ref.value as HTMLSpanElement).textContent = props.texts[textIndex % props.texts.length] ?? '';
     (text2Ref.value as HTMLSpanElement).textContent = props.texts[(textIndex + 1) % props.texts.length] ?? '';
@@ -91,9 +91,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div :class="props.class" id="container" class="text-morph">
-        <span ref="text1Ref" id="text1"></span>
-        <span ref="text2Ref" id="text2"></span>
+    <div id="container" :class="props.class" :style="props.style">
+        <span id="text1" ref="text1Ref"></span>
+        <span id="text2" ref="text2Ref"></span>
     </div>
     <svg id="filters">
         <defs>
@@ -110,19 +110,22 @@ onBeforeUnmount(() => {
 <!-- TODO: Fix up the CSS so both spans are positioned on top of each other -->
 
 <style scoped>
-#text1,
-#text2 {
+div#container {
+    display: inline;
+    position: absolute;
+    filter: url(#threshold) blur(0.6px);
+}
+
+span#text1,
+span#text2 {
     position: absolute;
     width: auto;
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-}
 
-#container.text-morph {
-    filter: url(#threshold) blur(0.6px);
-    line-height: 0;
-    margin: 0;
-    width: auto;
+    font-family: 'Raleway', sans-serif;
+
+    text-align: center;
+
+    user-select: none;
 }
 </style>

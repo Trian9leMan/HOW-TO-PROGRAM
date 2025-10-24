@@ -2,6 +2,13 @@
 import { onMounted, onBeforeUnmount } from 'vue'
 import NavBar from '../components/NavBar.vue'
 import KUTE from 'kute.js'
+import TextMorph from '../components/TextMorph.vue'
+
+const texts = [
+    "beginner friendly",
+    "powerful",
+    "simple"
+];
 
 let anim: ReturnType<typeof KUTE.fromTo> | null = null
 
@@ -43,14 +50,9 @@ onBeforeUnmount(() => {
         <NavBar />
         <main>
             <h1 id="title">Python</h1>
-
             <h2 class="heading">What is Python?</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis. Exercitationem dolores
-                veritatis blanditiis optio possimus consequatur, quasi nulla? Soluta molestias cum quaerat unde
-                voluptatibus delectus reprehenderit rem voluptates eaque.
-                Culpa esse sapiente porro sunt quasi aut laborum alias repudiandae quae. Iure quo ipsum sunt, quos
-                minima quasi nemo eos rem tenetur modi sed nostrum quaerat? Est, enim? Velit, reprehenderit.
+                Python is a <TextMorph :texts="texts" />
             </p>
             <h2 class="heading">Setting Up</h2>
             <p class="special">
