@@ -112,7 +112,6 @@ onBeforeUnmount(() => {
 <style scoped>
 div#container {
     display: inline;
-    position: absolute;
     filter: url(#threshold) blur(0.6px);
 }
 

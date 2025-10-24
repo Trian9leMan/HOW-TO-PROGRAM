@@ -55,7 +55,7 @@ onBeforeUnmount(() => {
                 Python is a <TextMorph :texts="texts" />
             </p>
             <h2 class="heading">Setting Up</h2>
-            <p class="special">
+            <p>
                 Go to the official Python website to setup python and follow the video below to setup your coding
                 enviroment, so that you can start coding!
             </p>
@@ -109,8 +109,4 @@ svg.blob-motion {
     text-decoration: none;
 }
 
-.special {
-    text-align: center;
-    display: block;
-}
 </style>
