@@ -11,7 +11,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
     morphTime: 1.5,
-    coolDownTime: 0.5,
+    coolDownTime: 1,
 });
 
 const text1Ref = useTemplateRef<HTMLSpanElement>("text1Ref");
@@ -54,7 +54,7 @@ function doCooldown() {
     (text1Ref.value as HTMLSpanElement).style.filter = '';
     (text1Ref.value as HTMLSpanElement).style.opacity = '0%';
     (text2Ref.value as HTMLSpanElement).style.filter = '';
-    (text2Ref.value as HTMLSpanElement).style.opacity = '0%';
+    (text2Ref.value as HTMLSpanElement).style.opacity = '100%';
 }
 
 function animate() {
@@ -112,6 +112,7 @@ onBeforeUnmount(() => {
 <style scoped>
 div#container {
     display: inline;
+    position: absolute;
     filter: url(#threshold) blur(0.6px);
 }
 
