@@ -18,20 +18,19 @@ onMounted(() => {
         const blob2 = document.querySelector('#blob2')
 
         if (!blob1 || !blob2) return
-        const anim = KUTE.fromTo(
+            KUTE.fromTo(
             blob1,
             { path: blob1 },
             { path: blob2 },
             {
-                repeat: Infinity,
-                duration: 8000,
-                yoyo: true,
-                easing: 'easingCubicInOut'
+            repeat: Infinity,
+            duration: 8000,
+            yoyo: true,
+            easing: 'easingCubicInOut'
             }
         )
 
-
-        anim.start()
+        anim.start()   
     })
 })
 
@@ -54,10 +53,9 @@ onBeforeUnmount(() => {
             <p>
                 Python is a <TextMorph :texts="texts" />
             </p>
-            <h2 class="heading">Setting Up</h2>
+            <h1 class="heading">Setting Up</h1>
             <p class="special">
-                Go to the official Python website to setup python and follow the video below to setup your coding
-                enviroment, so that you can start coding!
+                Go to the official Python website to setup python and follow the video below to setup your coding enviroment, so that you can start coding!
             </p>
             <a href="https://www.python.org/downloads/" class="link">OFFICIAL SITE FOR PYTHON DOWNLOAD</a>
             <video></video>
@@ -80,17 +78,19 @@ onBeforeUnmount(() => {
 
 
 <style scoped>
-svg.blob-motion {
-    width: clamp(300px, 60vw, 2700px);
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.blob-motion {
+  width: clamp(300px, 60vw, 800px);
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
+
+svg.blob-motion {
+    display: block;
+    margin:auto;
+    margin-top: 4rem;
+}
+
 
 #blob1 {
     will-change: transform;
@@ -101,15 +101,14 @@ svg.blob-motion {
 }
 
 .link {
-    display: block;
-    text-align: center;
-    margin: 1rem auto;
-    color: #1dc6a1;
-    font-weight: 600;
-    text-decoration: none;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  color: #1dc6a1;
+  font-weight: 600;
+  text-decoration: none;
 }
-
-.special {
+ .special {
     text-align: center;
     display: block;
 }
