@@ -91,10 +91,10 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div id="container" :class="props.class" :style="props.style">
+    <span id="container" :class="props.class" :style="props.style">
         <span id="text1" ref="text1Ref"></span>
         <span id="text2" ref="text2Ref"></span>
-    </div>
+    </span>
     <svg id="filters">
         <defs>
             <filter id="threshold">
@@ -110,16 +110,17 @@ onBeforeUnmount(() => {
 <!-- TODO: Fix up the CSS so both spans are positioned on top of each other -->
 
 <style scoped>
-div#container {
-    display: inline;
-    position: absolute;
+span#container {
+    position: relative;
+    white-space: nowrap;
     filter: url(#threshold) blur(0.6px);
 }
 
 span#text1,
 span#text2 {
     position: absolute;
-    width: auto;
+    top: -0.125rem;
+    left: 0;
     display: inline-block;
 
     font-family: 'Raleway', sans-serif;
