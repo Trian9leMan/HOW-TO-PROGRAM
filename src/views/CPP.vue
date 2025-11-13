@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// TODO: Make this work with page transitions!
+
 import NavBar from '../components/NavBar.vue'
 import RotatingCube from '../components/RotatingCube.vue'
 import { TresCanvas } from '@tresjs/core'
