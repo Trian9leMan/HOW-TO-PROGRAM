@@ -119,7 +119,7 @@ span#container {
 span#text1,
 span#text2 {
     position: absolute;
-    top: -0.125rem;
+    top: -0.125rem; /* Remove this number or something */ 
     left: 0;
     display: inline-block;
 

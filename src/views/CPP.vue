@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import NavBar from '../components/NavBar.vue'
+import RotatingCube from '../components/RotatingCube.vue'
+import { TresCanvas } from '@tresjs/core'
 </script>
 
 <template>
@@ -9,6 +11,13 @@ import NavBar from '../components/NavBar.vue'
         <main>
         </main>
     </div>
+    <TresCanvas clear-color="#191c25" window-size class="canvas">
+        <RotatingCube />
+    </TresCanvas>
 </template>
 
-<style scoped></style>
+<style scoped>
+.canvas {
+    z-index: -1;
+}
+</style>

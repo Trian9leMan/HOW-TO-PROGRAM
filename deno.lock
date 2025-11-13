@@ -3,7 +3,7 @@
   "specifiers": {
     "npm:@tresjs/core@^5.1.0": "5.1.0_three@0.180.0_vue@3.5.22__typescript@5.9.3_typescript@5.9.3",
     "npm:@types/node@^24.6.0": "24.7.2",
-    "npm:@types/three@0.180": "0.180.0",
+    "npm:@types/three@0.181": "0.181.0",
     "npm:@vitejs/plugin-vue@^6.0.1": "6.0.1_vite@7.1.10__@types+node@24.7.2__picomatch@4.0.3_vue@3.5.22__typescript@5.9.3_@types+node@24.7.2_typescript@5.9.3",
     "npm:@vue/tsconfig@~0.8.1": "0.8.1_typescript@5.9.3_vue@3.5.22__typescript@5.9.3",
     "npm:kute.js@^2.2.4": "2.2.4",
@@ -319,8 +319,8 @@
     "@types/stats.js@0.17.4": {
       "integrity": "sha512-jIBvWWShCvlBqBNIZt0KAshWpvSjhkwkEu4ZUcASoAvhmrgAUI2t1dXrjSL4xXVLB4FznPrIsX3nKXFl/Dt4vA=="
     },
-    "@types/three@0.180.0": {
-      "integrity": "sha512-ykFtgCqNnY0IPvDro7h+9ZeLY+qjgUWv+qEvUt84grhenO60Hqd4hScHE7VTB9nOQ/3QM8lkbNE+4vKjEpUxKg==",
+    "@types/three@0.181.0": {
+      "integrity": "sha512-MLF1ks8yRM2k71D7RprFpDb9DOX0p22DbdPqT/uAkc6AtQXjxWCVDjCy23G9t1o8HcQPk7woD2NIyiaWcWPYmA==",
       "dependencies": [
         "@dimforge/rapier3d-compat",
         "@tweenjs/tween.js",
@@ -771,7 +771,7 @@
       "dependencies": [
         "npm:@tresjs/core@^5.1.0",
         "npm:@types/node@^24.6.0",
-        "npm:@types/three@0.180",
+        "npm:@types/three@0.181",
         "npm:@vitejs/plugin-vue@^6.0.1",
         "npm:@vue/tsconfig@~0.8.1",
         "npm:kute.js@^2.2.4",
