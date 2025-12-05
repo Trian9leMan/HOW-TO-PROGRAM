@@ -125,7 +125,6 @@ span#text2 {
 
     font-family: 'Raleway', sans-serif;
 
-    text-align: center;
 
     user-select: none;
 }
