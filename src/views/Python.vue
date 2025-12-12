@@ -26,7 +26,7 @@ onMounted(() => {
                 repeat: Infinity,
                 duration: 8000,
                 yoyo: true,
-                easing: 'easingCubicInOut'
+                easing: 'easeInOutSine'
             }
         )
 

@@ -2,6 +2,7 @@
 // TODO: Make this work with page transitions!
 
 import NavBar from '../components/NavBar.vue'
+import RotatingDonut from '../components/RotatingDonut.vue'
 import RotatingCube from '../components/RotatingCube.vue'
 import { TresCanvas } from '@tresjs/core'
 </script>
@@ -14,7 +15,8 @@ import { TresCanvas } from '@tresjs/core'
         </main>
     </div>
     <TresCanvas clear-color="#191c25" window-size class="canvas">
-        <RotatingCube />
+        <RotatingDonut />
+        <RotatingCube :x-rot-speed=3 :y-rot-speed=1 />
     </TresCanvas>
 </template>
 

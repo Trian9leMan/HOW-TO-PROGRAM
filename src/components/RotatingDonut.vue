@@ -6,6 +6,7 @@ import { ref } from 'vue'
 interface Props {
     xRotSpeed?: number,
     yRotSpeed?: number,
+    colour?: string,
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -29,8 +30,8 @@ onBeforeRender(({ delta }) => {
 <template>
     <TresPerspectiveCamera :position="[7, 7, 7]" :look-at="[0, 0, 0]" />
     <TresMesh ref="cubeRef" :position="[0, 0, 0]">
-        <!-- <TresTorusGeometry :args="[5, 2, 16, 100]" /> -->
-        <TresBoxGeometry :args="[2, 2, 2]" />
+        <TresTorusGeometry :args="[5, 2, 16, 100]" />
+        <!-- <TresBoxGeometry :args="[2, 2, 2]" /> -->
         <TresMeshNormalMaterial />
     </TresMesh>
 </template>
